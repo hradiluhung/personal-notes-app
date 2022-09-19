@@ -1,0 +1,31 @@
+.note-app__header {
+  padding: 1.4rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-app__header-logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.note-app__header-archive-btn {
+  border: 1px solid var(--text-color);
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  color: vvar(--text-color);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: 0.2s all ease-in-out;
+  height: 40px;
+}
+
+.note-app__header-archive-btn:hover {
+  border-bottom: 5px solid var(--text-color);
+}

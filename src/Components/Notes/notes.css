@@ -1,0 +1,10 @@
+.note-app__notes {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.note-app__empty {
+  text-align: center;
+  width: 100%;
+}

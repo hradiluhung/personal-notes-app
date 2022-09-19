@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+/* dark minimalist color palette */
+:root {
+  --bg-color: #121424;
+  --text-color: #e5e5e5;
+  --primary-color: #3bba96;
+  --delete-color: #fb5260;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 0 4rem;
+}
+
+.note-app__main {
+  padding: 0 8rem;
+  position: relative;
+}
+
+.note-app__title {
+  margin-bottom: 1rem;
+}
+
+.note-app__detail-note {
+  padding: 3rem;
+}
+
+.note-app__detail-note_title {
+  font-size: 2.2rem;
+}
+
+.note-app__detail-note_date {
+  margin-bottom: 1.4rem;
+}
+
+.note-app__detail-note_body {
+  font-size: 1.2rem;
+}
+
+.note-app__not-found_title {
+  margin-top: 8rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.note-app__not-found_button {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 10px;
+  justify-content: space-between;
+  transition: 0.2s all ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.note-app__not-found_button:hover {
+  border-bottom: 5px solid var(--primary-color);
+}
+
+@media only screen and (max-width: 1200px) {
+  .note-app__main {
+    padding: 0 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .note-app__main {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .note-app__main {
+    padding: 0;
+  }
+}

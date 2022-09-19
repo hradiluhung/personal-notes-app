@@ -1,0 +1,96 @@
+.note-app__note {
+  width: 25%;
+  padding: 0.5rem;
+  min-height: 350px;
+}
+
+.note-app__card {
+  border: 1px solid var(--text-color);
+  padding: 1rem;
+  border-radius: 10px;
+  display: block;
+  transition: 0.2s all ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-app__card:hover {
+  border-bottom: 5px solid var(--text-color);
+}
+
+.note-app__card-title {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  transition: 0.3s all ease-in-out;
+}
+
+.note-app__card-title:hover {
+  text-decoration: underline;
+}
+
+.note-app__card-date {
+  margin-bottom: 0.5rem;
+}
+
+.note-app__card-body {
+  margin-bottom: 1rem;
+}
+
+.note-app__card-btns {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  height: 40px;
+}
+
+.note-app__card-btn {
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 10px;
+  justify-content: space-between;
+  transition: 0.2s all ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.archive-btn {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.archive-btn:hover {
+  border-bottom: 5px solid var(--primary-color);
+}
+
+.delete-btn {
+  border: 1px solid var(--delete-color);
+  color: var(--delete-color);
+}
+
+.delete-btn:hover {
+  border-bottom: 5px solid var(--delete-color);
+}
+
+@media only screen and (max-width: 1200px) {
+  .note-app__note {
+    width: calc(100% / 3);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .note-app__note {
+    width: calc(100% / 2);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .note-app__note {
+    width: 100%;
+  }
+}
