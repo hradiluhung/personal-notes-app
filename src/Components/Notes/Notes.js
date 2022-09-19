@@ -31,6 +31,8 @@ const Notes = ({
 Notes.propTypes = {
   notes: PropTypes.arrayOf(PropTypes.object).isRequired,
   onDeleteNoteEventHandler: PropTypes.func.isRequired,
+  onArchiveNoteEventHandler: PropTypes.func.isRequired,
+  onUnarchiveNoteEventHandler: PropTypes.func.isRequired,
 };
 
 export default Notes;

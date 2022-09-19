@@ -6,4 +6,7 @@
 
 - React
 - React Router
-- React Hooks
+
+### Dibuat oleh:
+
+Hakam Royhan Adiluhung
